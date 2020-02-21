@@ -1,10 +1,12 @@
-from logger import Logger
 from config import Config
-from spi import Spi
 from rotary import Rotary
+from spi import Spi
+from decoder import Decoder
+#from gpio import Gpio
 
-class Speed(Rotary, Spi):
+class Speed(Rotary, Spi, Decoder):
     print(__name__)
     def __init__(self):
-        print(Speed.__mro__)
         super().__init__()
+        self.config = Config
+        self.rotary = Rotary

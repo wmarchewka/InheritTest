@@ -1,7 +1,7 @@
-from logger import Logger
-from config import Config
+#from logger import Logger
+#from config import Config
 
-class Gpio(Config, Logger):
+class Gpio():
     print(__name__)
 
     def __init__(self):

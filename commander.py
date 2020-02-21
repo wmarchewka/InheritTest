@@ -1,8 +1,9 @@
 print(__name__)
 from speed import Speed
 from gain import Gain
+from gui import Gui
 
-class Commander(Speed, Gain):
+class Commander(Speed, Gain, Gui):
     print(__name__)
     def __init__(self):
         super().__init__()
